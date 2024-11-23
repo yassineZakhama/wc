@@ -77,11 +77,22 @@ Output:
 7145
 ```
 
-<b>Using standard input</b>
+<b>Using standard input (Windows)</b>
 
-Windows:
 ```sh
 type test.txt | ./wc.exe wc -l
+```
+
+Output:
+
+```sh
+7145
+```
+
+<b>Using standard input (Unix)</b>
+
+```sh
+cat test.txt | ./wc wc -l
 ```
 
 Output:
