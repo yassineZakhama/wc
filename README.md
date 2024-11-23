@@ -94,4 +94,4 @@ Output:
 
 Inspired by the Unix wc tool.
 
-Implementation <a href="https://codingchallenges.fyi/challenges/challenge-wc/">John Cricket's Coding Challenge</a>
+Implementation of <a href="https://codingchallenges.fyi/challenges/challenge-wc/">John Cricket's Coding Challenge</a>
