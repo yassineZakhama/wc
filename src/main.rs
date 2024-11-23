@@ -7,9 +7,9 @@ fn main() {
 
     match Config::build(&args) {
         Ok(config) => match wc::run(config) {
-            Err(err) => println!("{}", err),
+            Err(err) => eprintln!("{}", err),
             _ => return,
         },
-        Err(err) => println!("{}", err),
+        Err(err) => eprintln!("{}", err),
     }
 }
