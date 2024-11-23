@@ -10,17 +10,17 @@ use wc::{CommandOption, Wc};
 
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     if let Some(file_path) = config.file_path {
-        let file = fs::read_to_string(file_path)?;
-        let wc = Wc(file);
+        let file_content = fs::read_to_string(file_path)?;
+        let wc = Wc(file_content);
         process_option(&wc, config.option);
-        return Ok(());
     } else {
-        let mut s = String::new();
-        io::stdin().read_to_string(&mut s).unwrap();
-        let wc = Wc(s);
+        let mut input_content = String::new();
+        io::stdin().read_to_string(&mut input_content)?;
+        let wc = Wc(input_content);
         process_option(&wc, config.option);
-        return Ok(());
     }
+
+    Ok(())
 }
 
 fn process_option(wc: &Wc, option: Option<CommandOption>) {
