@@ -1,7 +1,6 @@
 # wc
 
-This is my implementation of the Unix wc (word count) command-line tool. 
-It is a solution for <a href="https://codingchallenges.fyi/challenges/challenge-wc/">John Cricket's Coding Challenge</a>
+A Rust implementation of the Unix wc (word count) command-line tool. 
 
 This program counts lines, words, characters, and bytes in text files or standard input.
 
@@ -37,7 +36,7 @@ This program counts lines, words, characters, and bytes in text files or standar
 ## Usage
 
 ```sh
-./wc wc [OPTION] [FILE]
+./wc.exe wc [OPTION] [FILE]
 ```
 
 - [OPTION]:
@@ -90,3 +89,9 @@ Output:
 ```sh
 7145
 ```
+
+## Acknowledgments
+
+Inspired by the Unix wc tool.
+
+Implementation <a href="https://codingchallenges.fyi/challenges/challenge-wc/">John Cricket's Coding Challenge</a>
