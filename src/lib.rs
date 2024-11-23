@@ -5,8 +5,8 @@ use std::io::{self, Read};
 mod config;
 mod wc;
 
-pub use config::Config;
-use wc::{CommandOption, Wc};
+pub use config::{CommandOption, Config};
+use wc::Wc;
 
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     if let Some(file_path) = config.file_path {
