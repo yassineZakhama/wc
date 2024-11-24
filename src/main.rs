@@ -1,4 +1,4 @@
-use std::env;
+use std::{env, io};
 
 use wc::{self, Config};
 
@@ -8,7 +8,11 @@ fn main() {
     match Config::build(&args) {
         Ok(config) => match wc::run(config) {
             Err(err) => eprintln!("{}", err),
-            _ => return,
+            _ => {
+                println!("Enter anything to exit.");
+                let _ = io::stdin().read_line(&mut String::new());
+                return;
+            }
         },
         Err(err) => eprintln!("{}", err),
     }

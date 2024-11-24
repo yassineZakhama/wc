@@ -25,7 +25,7 @@ This program counts lines, words, characters, and bytes in text files or standar
 
 2. Build the program
 
-    Cargo is required to build this repository
+    Cargo is required to build this repository.
 
     The Following command will execute the build:
 
@@ -105,4 +105,4 @@ Output:
 
 Inspired by the Unix wc tool.
 
-Implementation of <a href="https://codingchallenges.fyi/challenges/challenge-wc/">John Cricket's Coding Challenge</a>
+Implementation of <a href="https://codingchallenges.fyi/challenges/challenge-wc/">John Cricket's Coding Challenge</a>.
